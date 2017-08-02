@@ -1,17 +1,17 @@
 :icons: font
 :runtime: ${runtime}
 
-{{#if Runtime == "Spring Boot"}}
+{{#if (eq Runtime "Spring Boot")}}
 :guideURL: http://appdev.openshift.io/docs/spring-boot-runtime.html
 :guideName: Spring Boot Tomcat Runtime Guide
 {{/if}}
 
-{{#if Runtime == "Eclipse Vert.x"}}
+{{#if (eq Runtime "Eclipse Vert.x")}}
 :guideURL: http://appdev.openshift.io/docs/vertx-runtime.html
 :guideName: Eclipse Vert.x Runtime Guide
 {{/if}}
 
-{{#if Runtime == "WildFly Swarm"}}
+{{#if (eq Runtime "WildFly Swarm")}}
 :guideURL: http://appdev.openshift.io/docs/wf-swarm-runtime.html
 :guideName: WildFly Swarm Runtime Guide
 {{/if}}
