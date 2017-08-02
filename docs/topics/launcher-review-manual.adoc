@@ -1,17 +1,14 @@
-:icons: font
-:runtime: ${Runtime}
-
-ifeval::["{runtime}" == "Spring Boot"]
+ifeval::["{Runtime}" == "Spring Boot"]
 :guideURL: http://appdev.openshift.io/docs/spring-boot-runtime.html
 :guideName: Spring Boot Tomcat Runtime Guide
 endif::[]
 
-ifeval::["{runtime}" == "Eclipse Vert.x"]
+ifeval::["{Runtime}" == "Eclipse Vert.x"]
 :guideURL: http://appdev.openshift.io/docs/vertx-runtime.html
 :guideName: Eclipse Vert.x Runtime Guide
 endif::[]
 
-ifeval::["{runtime}" == "WildFly Swarm"]
+ifeval::["{Runtime}" == "WildFly Swarm"]
 :guideURL: http://appdev.openshift.io/docs/wf-swarm-runtime.html
 :guideName: WildFly Swarm Runtime Guide
 endif::[]
