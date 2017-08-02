@@ -1,19 +1,15 @@
 
-Your project is available for download and is ready to build and deploy locally. Refer to the mission details in the link:
-
-{{#if (eq Runtime "Spring Boot")}}
-http://appdev.openshift.io/docs/spring-boot-runtime.html
-[Spring Boot Tomcat Runtime Guide]
+Your project is available for download and is ready to build and deploy locally. Refer to the mission details in the
+{{~#if (eq Runtime "Spring Boot")}}
+    link:http://appdev.openshift.io/docs/spring-boot-runtime.html[Spring Boot Tomcat Runtime Guide]
 {{/if}}
 
-{{#if (eq Runtime "Eclipse Vert.x")}}
-http://appdev.openshift.io/docs/vertx-runtime.html
-[Eclipse Vert.x Runtime Guide]
-{{/if}}
+{{~#if (eq Runtime "Eclipse Vert.x")}}
+    link:http://appdev.openshift.io/docs/vertx-runtime.html[Eclipse Vert.x Runtime Guide]
+{{~/if}}
 
-{{#if (eq Runtime "WildFly Swarm")}}
-http://appdev.openshift.io/docs/wf-swarm-runtime.html
-[WildFly Swarm Runtime Guide]
-{{/if}}
+{{~#if (eq Runtime "WildFly Swarm")}}
+    link:http://appdev.openshift.io/docs/wf-swarm-runtime.html[WildFly Swarm Runtime Guide]
+{{~/if}}
 
 for more information on building, deploying, and interacting with your booster.
