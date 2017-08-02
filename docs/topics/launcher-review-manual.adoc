@@ -1,20 +1,19 @@
 :icons: font
 :runtime: ${runtime}
 
-ifeval::["{runtime}" == "Spring Boot"]
+{{#if Runtime == "Spring Boot"}}
 :guideURL: http://appdev.openshift.io/docs/spring-boot-runtime.html
 :guideName: Spring Boot Tomcat Runtime Guide
-endif::[]
+{{/if}}
 
-ifeval::["{runtime}" == "Eclipse Vert.x"]
+{{#if Runtime == "Eclipse Vert.x"}}
 :guideURL: http://appdev.openshift.io/docs/vertx-runtime.html
 :guideName: Eclipse Vert.x Runtime Guide
-endif::[]
+{{/if}}
 
-ifeval::["{runtime}" == "WildFly Swarm"]
+{{#if Runtime == "WildFly Swarm"}}
 :guideURL: http://appdev.openshift.io/docs/wf-swarm-runtime.html
 :guideName: WildFly Swarm Runtime Guide
-endif::[]
-
+{{/if}}
 
 Your project is available for download and is ready to build and deploy locally. Refer to the mission details in the link:{guideURL}[{guideName}^] for more information on building, deploying, and interacting with your booster.
